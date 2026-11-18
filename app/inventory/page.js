@@ -4,12 +4,13 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const inventoryData = [
-  // 1-8: Polycraft
+  // ===================== NEW BOATS: POLYCRAFT =====================
   {
     id: 'pc-300-hull',
     name: '2026 Polycraft 300 Tuffy (Hull Only)',
     brand: 'polycraft',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "10'0\" • Width: 5'0\" • 238 lbs • Up to 15 HP",
     stock: 'PC-300-01',
     status: 'IN STOCK',
@@ -22,7 +23,8 @@ const inventoryData = [
     id: 'pc-300-elec',
     name: '2026 Polycraft 300 Tuffy Electric',
     brand: 'polycraft',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "10'0\" • ePropulsion Spirit 1.0 Plus (Lithium)",
     stock: 'PC-300-EL',
     status: 'IN STOCK',
@@ -35,7 +37,8 @@ const inventoryData = [
     id: 'pc-300-yam9',
     name: '2026 Polycraft 300 Tuffy | 9.9 HP Yamaha',
     brand: 'polycraft',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "10'0\" • Yamaha 9.9 HP Tiller Outboard",
     stock: 'PC-300-Y9',
     status: 'IN STOCK',
@@ -48,7 +51,8 @@ const inventoryData = [
     id: 'pc-300-yam15',
     name: '2026 Polycraft 300 Tuffy | 15 HP Yamaha',
     brand: 'polycraft',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "10'0\" • Yamaha 15 HP Tiller Outboard",
     stock: 'PC-300-Y15',
     status: 'IN STOCK',
@@ -61,7 +65,8 @@ const inventoryData = [
     id: 'pc-410-cc',
     name: '2025 Polycraft 410 Challenger Center Console | 50 HP',
     brand: 'polycraft',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "13'6\" • Width: 6'0\" • 400 lbs • Yamaha 50 HP",
     stock: 'PC-410-CC',
     status: 'IN STOCK',
@@ -74,7 +79,8 @@ const inventoryData = [
     id: 'pc-410-sc',
     name: '2025 Polycraft 410 Challenger Side Console | 50 HP',
     brand: 'polycraft',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "13'6\" • Width: 6'0\" • 400 lbs • Yamaha 50 HP",
     stock: 'PC-410-SC',
     status: 'IN STOCK',
@@ -87,7 +93,8 @@ const inventoryData = [
     id: 'pc-480-cc',
     name: '2025 Polycraft 480 Brumby Center Console | 90 HP',
     brand: 'polycraft',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "15'8\" • Width: 7'0\" • 683 lbs • Yamaha 90 HP",
     stock: 'PC-480-CC',
     status: 'IN STOCK',
@@ -100,7 +107,8 @@ const inventoryData = [
     id: 'pc-480-sc',
     name: '2025 Polycraft 480 Brumby Side Console | 90 HP',
     brand: 'polycraft',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "15'8\" • Width: 7'0\" • 683 lbs • Yamaha 90 HP",
     stock: 'PC-480-SC',
     status: 'IN STOCK',
@@ -110,12 +118,13 @@ const inventoryData = [
     desc: 'Hull + Motor + Side Console. Power Trim & Tilt, Digital Tachometer, Navigation Lights, Boarding Ladder.'
   },
 
-  // 9-16: Steady
+  // ===================== NEW BOATS: STEADY =====================
   {
     id: 'st-260-hull',
     name: '2026 Steady 260 (Hull Only)',
     brand: 'steady',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "8'4\" • Width: 4'5\" • 132 lbs • Max 3 Persons",
     stock: 'ST-260-01',
     status: 'IN STOCK',
@@ -128,7 +137,8 @@ const inventoryData = [
     id: 'st-260-yam8',
     name: '2026 Steady 260 w/ Yamaha 8HP',
     brand: 'steady',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "8'4\" • Width: 4'5\" • Yamaha 8 HP Tiller",
     stock: 'ST-260-Y8',
     status: 'IN STOCK',
@@ -141,7 +151,8 @@ const inventoryData = [
     id: 'st-320-hull',
     name: '2026 Steady 320 (Hull Only)',
     brand: 'steady',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "10'5\" • Width: 5'0\" • 253 lbs • Self Bailing",
     stock: 'ST-320-01',
     status: 'IN STOCK',
@@ -154,7 +165,8 @@ const inventoryData = [
     id: 'st-320-yam15',
     name: '2026 Steady 320 w/ 15 HP Yamaha Motor',
     brand: 'steady',
-    category: 'new',
+    category: 'new-boats',
+    condition: 'New',
     specs: "10'5\" • Width: 5'0\" • Yamaha 15 HP Tiller",
     stock: 'ST-320-Y15',
     status: 'IN STOCK',
@@ -167,7 +179,8 @@ const inventoryData = [
     id: 'st-400-cs',
     name: 'Steady 400 Utility Workboat',
     brand: 'steady',
-    category: 'coming-soon',
+    category: 'new-boats',
+    condition: 'New',
     specs: "13'2\" • Width: 5'11\" • 440 lbs • Up to 40 HP",
     stock: 'ST-400-CS',
     status: 'COMING SOON',
@@ -180,7 +193,8 @@ const inventoryData = [
     id: 'st-go-cs',
     name: 'Steady GO Compact Tender',
     brand: 'steady',
-    category: 'coming-soon',
+    category: 'new-boats',
+    condition: 'New',
     specs: "9'6\" • Width: 4'8\" • 175 lbs • Up to 10 HP",
     stock: 'ST-GO-CS',
     status: 'COMING SOON',
@@ -193,7 +207,8 @@ const inventoryData = [
     id: 'st-11-cs',
     name: 'Steady 11 Easy / 14 Active Sport',
     brand: 'steady',
-    category: 'coming-soon',
+    category: 'new-boats',
+    condition: 'New',
     specs: "14'1\" • Width: 5'8\" • 375 lbs • Up to 30 HP",
     stock: 'ST-14-CS',
     status: 'COMING SOON',
@@ -206,7 +221,8 @@ const inventoryData = [
     id: 'st-multi-cs',
     name: 'Steady 14 Fisher / 16 Explorer / 17 Multi',
     brand: 'steady',
-    category: 'coming-soon',
+    category: 'new-boats',
+    condition: 'New',
     specs: "17'0\" • Width: 7'0\" • 770 lbs • Up to 80 HP",
     stock: 'ST-17-CS',
     status: 'COMING SOON',
@@ -215,6 +231,64 @@ const inventoryData = [
     img: '/assets/brand-steady.png',
     desc: 'Flagship multi-purpose rescue and workboat with drop-down bow ramp for wheelchairs, divers, and gear.'
   },
+
+  // ===================== PRE-OWNED BOATS =====================
+  {
+    id: 'po-300-pkg',
+    name: '2023 Polycraft 300 Tuffy Certified Package',
+    brand: 'polycraft',
+    category: 'pre-owned',
+    condition: 'Pre-Owned',
+    specs: "10'0\" • Honda 9.9HP 4-Stroke • 24 Engine Hours",
+    stock: 'PO-300-77',
+    status: 'CERTIFIED PRE-OWNED',
+    price: '$4,925',
+    breakdown: 'Unit $4,850 + Doc Fee $75',
+    img: '/assets/real-boat-300-tuffy.jpg',
+    desc: 'Certified pre-owned. Includes Honda 9.9HP 4-stroke outboard, galvanized bunk trailer, sunbrella cover, Lowrance sonar.'
+  },
+  {
+    id: 'po-st-260',
+    name: '2022 Steady 260 Certified Yacht Tender',
+    brand: 'steady',
+    category: 'pre-owned',
+    condition: 'Pre-Owned',
+    specs: "8'4\" • Suzuki 4HP 4-Stroke • 15 Engine Hours",
+    stock: 'PO-ST-260',
+    status: 'CERTIFIED PRE-OWNED',
+    price: '$2,225',
+    breakdown: 'Unit $2,150 + Doc Fee $75',
+    img: '/assets/real-boat-steady-260.jpg',
+    desc: 'Arctic white hull with fresh safety rope perimeter. Used for a single summer season in Long Island Sound. 50-point inspection passed.'
+  },
+  {
+    id: 'po-410-cc',
+    name: '2021 Polycraft 410 Center Console Pre-Owned',
+    brand: 'polycraft',
+    category: 'pre-owned',
+    condition: 'Pre-Owned',
+    specs: "13'6\" • Suzuki 50HP Lean Burn • 82 Engine Hours",
+    stock: 'PO-PC-410',
+    status: 'CERTIFIED PRE-OWNED',
+    price: '$12,565',
+    breakdown: 'Unit $12,490 + Doc Fee $75',
+    img: '/assets/real-boat-410-challenger.jpg',
+    desc: 'Olive Green hull. Minn Kota Riptide Terrova 55lb trolling motor with i-Pilot, Garmin 7" Echomap GPS/sonar, custom Bimini top.'
+  },
+  {
+    id: 'po-480-brumby',
+    name: '2020 Polycraft 480 Brumby Bowrider Pre-Owned',
+    brand: 'polycraft',
+    category: 'pre-owned',
+    condition: 'Pre-Owned',
+    specs: "15'8\" • Yamaha 70HP 4-Stroke • 140 Engine Hours",
+    stock: 'PO-PC-480',
+    status: 'CERTIFIED PRE-OWNED',
+    price: '$16,275',
+    breakdown: 'Unit $16,200 + Doc Fee $75',
+    img: '/assets/real-boat-480-brumby.jpg',
+    desc: 'Ski tow pole, stainless boarding ladder, Garmin 7" touchscreen, forward bow cushions, aluminum trailer. Turn-key condition.'
+  }
 ];
 
 export default function InventoryPage() {
@@ -224,17 +298,19 @@ export default function InventoryPage() {
   const filtered = inventoryData.filter(item => {
     const matchesFilter = (
       filter === 'all' ||
-      item.category === filter ||
-      item.brand === filter ||
-      (filter === 'in-stock' && item.status === 'IN STOCK') ||
-      (filter === 'coming-soon' && item.status === 'COMING SOON')
+      (filter === 'new-boats' && item.condition === 'New') ||
+      (filter === 'pre-owned' && item.condition === 'Pre-Owned') ||
+      (filter === 'polycraft' && item.brand === 'polycraft') ||
+      (filter === 'steady' && item.brand === 'steady')
     );
     const q = search.toLowerCase().trim();
     const matchesSearch = (
       q === '' ||
       item.name.toLowerCase().includes(q) ||
       item.specs.toLowerCase().includes(q) ||
-      item.desc.toLowerCase().includes(q)
+      item.desc.toLowerCase().includes(q) ||
+      item.brand.toLowerCase().includes(q) ||
+      item.status.toLowerCase().includes(q)
     );
     return matchesFilter && matchesSearch;
   });
@@ -244,21 +320,21 @@ export default function InventoryPage() {
       <section className="page-banner">
         <div className="container">
           <div className="breadcrumbs"><Link href="/">HOME</Link> / CURRENT INVENTORY</div>
-          <h1 className="page-banner-title">IN-STOCK & INCOMING INVENTORY</h1>
-          <p className="page-banner-desc">Real-time dealer inventory at Alpine Marina, NJ. Official 16-product lineup from Polycraft and Steady. Transparent itemized pricing includes freight and pre-delivery inspection.</p>
+          <h1 className="page-banner-title">CURRENT INVENTORY</h1>
+          <p className="page-banner-desc">Filter dealer inventory by New Boats, Pre-Owned, Polycraft, or Steady. Located inside Alpine Marina, NJ. Transparent itemized pricing includes freight and pre-delivery inspection.</p>
         </div>
       </section>
 
-      {/* Filter Toolbar */}
+      {/* 4 Core Category Filter Toolbar */}
       <div className="filter-toolbar">
         <div className="container filter-bar-inner">
           <div className="filter-pills">
             {[
-              { id: 'all', label: 'All 16 Models' },
-              { id: 'polycraft', label: 'Polycraft (8)' },
-              { id: 'steady', label: 'Steady (8)' },
-              { id: 'in-stock', label: 'In Stock' },
-              { id: 'coming-soon', label: 'Coming Soon' }
+              { id: 'all', label: 'All Inventory' },
+              { id: 'new-boats', label: 'New Boats' },
+              { id: 'pre-owned', label: 'Pre-Owned' },
+              { id: 'polycraft', label: 'Polycraft' },
+              { id: 'steady', label: 'Steady' }
             ].map((f) => (
               <button
                 key={f.id}
@@ -273,7 +349,7 @@ export default function InventoryPage() {
             <span>🔍</span>
             <input
               type="text"
-              placeholder="Search by model, specs, price..."
+              placeholder="Search inventory..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -285,10 +361,14 @@ export default function InventoryPage() {
         <div className="container">
           <div style={{ marginBottom: '25px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
             <div style={{ fontFamily: 'var(--font-heading)', fontSize: '15px', fontWeight: 800, color: 'var(--navy-dark)', textTransform: 'uppercase' }}>
-              OFFICIAL LINEUP REPOSITORY (16 PRODUCTS)
+              {filter === 'all' && 'ALL INVENTORY'}
+              {filter === 'new-boats' && 'NEW BOATS INVENTORY'}
+              {filter === 'pre-owned' && 'CERTIFIED PRE-OWNED BOATS'}
+              {filter === 'polycraft' && 'POLYCRAFT BOATS'}
+              {filter === 'steady' && 'STEADY BOATS'}
             </div>
             <span style={{ fontSize: '13px', color: 'var(--text-specs)', fontWeight: 600 }}>
-              Showing {filtered.length} model{filtered.length === 1 ? '' : 's'}
+              Showing {filtered.length} boat{filtered.length === 1 ? '' : 's'}
             </span>
           </div>
 
@@ -296,7 +376,12 @@ export default function InventoryPage() {
             {filtered.map((item) => (
               <div key={item.id} className="boat-card">
                 <div className="card-img-wrap">
-                  <span className="card-badge" style={{ background: item.status === 'COMING SOON' ? 'var(--navy-dark)' : 'var(--primary-blue)' }}>
+                  <span
+                    className="card-badge"
+                    style={{
+                      background: item.condition === 'Pre-Owned' ? 'var(--navy-dark)' : item.status === 'COMING SOON' ? 'var(--navy-dark)' : 'var(--primary-blue)'
+                    }}
+                  >
                     {item.status}
                   </span>
                   <img src={item.img} alt={item.name} style={{ width: '100%', height: '220px', objectFit: 'cover' }} />
