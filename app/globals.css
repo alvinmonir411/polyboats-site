@@ -72,11 +72,14 @@ img {
   display: block;
 }
 
+/* Master Container: Fixed left & right alignment across whole site */
 .container {
   width: 92%;
   max-width: var(--container-max);
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Header */
@@ -178,29 +181,31 @@ img {
   cursor: pointer;
 }
 
-/* Hero Section */
+/* Hero Section: Perfectly aligns with header logo */
 .hero-section {
   position: relative;
-  min-height: 620px;
+  min-height: 640px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #0B2535 url('/assets/hero-boat.png') center/cover no-repeat;
+  background: #061826 url('/assets/hero-boat.png') right center/cover no-repeat;
   color: #FFFFFF;
-  padding: 70px 0 25px 0;
+  padding: 80px 0 25px 0;
 }
 
 .hero-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(90deg, rgba(5, 23, 37, 0.78) 0%, rgba(5, 23, 37, 0.4) 50%, rgba(5, 23, 37, 0.15) 100%);
+  background: linear-gradient(90deg, rgba(6, 24, 38, 0.95) 0%, rgba(6, 24, 38, 0.8) 42%, rgba(6, 24, 38, 0.15) 85%);
   pointer-events: none;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 650px;
+  max-width: 620px;
+  margin: 0;
+  text-align: left;
 }
 
 .hero-title {
@@ -215,16 +220,16 @@ img {
 
 .hero-subtitle {
   font-size: var(--fs-p1);
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 8px;
   color: #FFFFFF;
 }
 
 .hero-desc {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.88);
-  margin-bottom: 30px;
-  line-height: 1.5;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+  line-height: 1.55;
 }
 
 .hero-buttons {
@@ -242,7 +247,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  padding: 12px 24px;
+  padding: 13px 26px;
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
@@ -264,7 +269,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  padding: 12px 24px;
+  padding: 13px 26px;
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
@@ -301,6 +306,14 @@ img {
   letter-spacing: 0.8px;
 }
 
+.badge-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .badge-item.shipping {
   margin-left: auto;
   text-align: right;
@@ -322,7 +335,7 @@ img {
   letter-spacing: 0.6px;
 }
 
-/* Brand Grid */
+/* Brand Grid (Polycraft & Steady) - Clean High-Res */
 .brand-grid-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -331,11 +344,11 @@ img {
 
 .brand-card {
   position: relative;
-  min-height: 380px;
+  min-height: 420px;
   background-size: cover;
   background-position: center;
   color: #FFFFFF;
-  padding: 40px;
+  padding: 45px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -347,7 +360,7 @@ img {
 .brand-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(180deg, rgba(5, 23, 37, 0.25) 0%, rgba(5, 23, 37, 0.6) 80%);
+  background: linear-gradient(180deg, rgba(5, 23, 37, 0.35) 0%, rgba(5, 23, 37, 0.75) 100%);
 }
 
 .brand-top, .brand-bottom {
@@ -357,7 +370,7 @@ img {
 
 .brand-logo-text {
   font-family: var(--font-heading);
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
@@ -366,7 +379,7 @@ img {
 
 .brand-tagline {
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -375,9 +388,9 @@ img {
 
 .brand-models {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .btn-white-solid {
@@ -388,7 +401,7 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 11px 22px;
+  padding: 12px 24px;
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
@@ -551,7 +564,7 @@ img {
 .card-img-wrap {
   position: relative;
   background-color: #EAEFF2;
-  height: 155px;
+  height: 165px;
   overflow: hidden;
 }
 
@@ -559,6 +572,11 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.boat-card:hover .card-img-wrap img {
+  transform: scale(1.04);
 }
 
 .card-badge {
@@ -574,6 +592,7 @@ img {
   letter-spacing: 0.6px;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
+  z-index: 2;
 }
 
 .card-body {
@@ -688,17 +707,29 @@ img {
   flex-wrap: wrap;
 }
 
-/* Bottom CTA */
+/* Bottom CTA Banner (Clean Sunset Background) */
 .bottom-cta-banner {
   background: #E89E62 url('/assets/sunset-cta.png') center/cover no-repeat;
-  padding: 45px 0;
+  padding: 55px 0;
   text-align: center;
   position: relative;
 }
 
+.bottom-cta-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.bottom-cta-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
 .cta-title {
   font-family: var(--font-heading);
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 900;
   text-transform: uppercase;
   color: var(--navy-dark);
@@ -707,8 +738,8 @@ img {
 }
 
 .cta-sub {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--navy-dark);
   margin-bottom: 24px;
 }
@@ -728,12 +759,13 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 10px 22px;
+  padding: 12px 26px;
   border-radius: var(--radius-pill);
   display: inline-flex;
   align-items: center;
   gap: 6px;
   border: 1px solid #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .btn-pill-white:hover {
@@ -749,12 +781,13 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 10px 22px;
+  padding: 12px 26px;
   border-radius: var(--radius-pill);
   display: inline-flex;
   align-items: center;
   gap: 6px;
   border: 1px solid rgba(11, 37, 53, 0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .btn-pill-warm:hover {

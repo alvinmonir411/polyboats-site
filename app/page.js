@@ -6,56 +6,60 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-overlay"></div>
-        <div className="container hero-content">
-          <h1 className="hero-title">BUILT<br />DIFFERENT.<br />BUILT TO LAST.</h1>
-          <p className="hero-subtitle">Polyethylene boats from Polycraft and Steady.</p>
-          <p className="hero-desc">Exceptionally durable. Low maintenance. Ready for real-world use on lakes, rivers, bays and beyond.</p>
-          
-          <div className="hero-buttons">
-            <Link href="/new-boats" className="btn-primary-blue">SHOP NEW BOATS &rarr;</Link>
-            <Link href="/inventory" className="btn-outline-white">VIEW INVENTORY &rarr;</Link>
+        <div className="container">
+          <div className="hero-content">
+            <h1 className="hero-title">BUILT<br />DIFFERENT.<br />BUILT TO LAST.</h1>
+            <p className="hero-subtitle">Polyethylene boats from Polycraft and Steady.</p>
+            <p className="hero-desc">Exceptionally durable. Low maintenance. Ready for real-world use on lakes, rivers, bays and beyond.</p>
+            
+            <div className="hero-buttons">
+              <Link href="/new-boats" className="btn-primary-blue">SHOP NEW BOATS &rarr;</Link>
+              <Link href="/inventory" className="btn-outline-white">VIEW INVENTORY &rarr;</Link>
+            </div>
           </div>
         </div>
 
         {/* Value Badges Bar */}
-        <div className="container hero-badges-bar">
-          <div className="badge-item">
-            <span className="badge-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </span>
-            IMPACT RESISTANT
-          </div>
-          <div className="badge-item">
-            <span className="badge-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            </span>
-            LOW MAINTENANCE
-          </div>
-          <div className="badge-item">
-            <span className="badge-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M2 12c2.5-2.5 5.5-2.5 8 0s5.5 2.5 8 0 5.5-2.5 8 0"/><path d="M2 17c2.5-2.5 5.5-2.5 8 0s5.5 2.5 8 0 5.5-2.5 8 0"/></svg>
-            </span>
-            NO GELCOAT
-          </div>
-          <div className="badge-item">
-            <span className="badge-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
-            </span>
-            EXTREMELY DURABLE
-          </div>
-          <div className="badge-item shipping">
-            <div className="shipping-header">
+        <div className="container">
+          <div className="hero-badges-bar">
+            <div className="badge-item">
               <span className="badge-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </span>
-              NATIONWIDE SHIPPING
+              IMPACT RESISTANT
             </div>
-            <div className="shipping-sub">USA &bull; CANADA &bull; MEXICO &bull; CARIBBEAN</div>
+            <div className="badge-item">
+              <span className="badge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </span>
+              LOW MAINTENANCE
+            </div>
+            <div className="badge-item">
+              <span className="badge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M2 12c2.5-2.5 5.5-2.5 8 0s5.5 2.5 8 0 5.5-2.5 8 0"/><path d="M2 17c2.5-2.5 5.5-2.5 8 0s5.5 2.5 8 0 5.5-2.5 8 0"/></svg>
+              </span>
+              NO GELCOAT
+            </div>
+            <div className="badge-item">
+              <span className="badge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+              </span>
+              EXTREMELY DURABLE
+            </div>
+            <div className="badge-item shipping">
+              <div className="shipping-header">
+                <span className="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </span>
+                NATIONWIDE SHIPPING
+              </div>
+              <div className="shipping-sub">USA &bull; CANADA &bull; MEXICO &bull; CARIBBEAN</div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Brand Showcase Grid */}
+      {/* Brand Showcase Grid - Clean Real Photography */}
       <section className="brand-grid-section">
         <div className="brand-card polycraft">
           <div className="brand-overlay"></div>
@@ -123,7 +127,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Boats Section */}
+      {/* Featured Boats Section - Real Live Scraped Pricing */}
       <section className="featured-boats-section">
         <div className="container">
           <div className="section-header-row">
@@ -135,7 +139,7 @@ export default function HomePage() {
             <div className="boat-card">
               <div className="card-img-wrap">
                 <span className="card-badge">NEW</span>
-                <img src="/assets/boat-300-tuffy.png" alt="2026 Polycraft 300 Tuffy" />
+                <img src="/assets/real-boat-300-tuffy.jpg" alt="2026 Polycraft 300 Tuffy" />
               </div>
               <div className="card-body">
                 <h4 className="boat-name">2026 Polycraft 300 Tuffy</h4>
@@ -148,12 +152,12 @@ export default function HomePage() {
             <div className="boat-card">
               <div className="card-img-wrap">
                 <span className="card-badge">NEW</span>
-                <img src="/assets/boat-410-challenger.png" alt="2026 Polycraft 410 Challenger" />
+                <img src="/assets/real-boat-410-challenger.jpg" alt="2025 Polycraft 410 Challenger" />
               </div>
               <div className="card-body">
-                <h4 className="boat-name">2026 Polycraft 410 Challenger</h4>
-                <div className="boat-specs">13&apos;6&quot; &nbsp;|&nbsp; 400 lbs &nbsp;|&nbsp; 30&ndash;60 HP</div>
-                <div className="boat-price">$14,369</div>
+                <h4 className="boat-name">2025 Polycraft 410 Challenger CC</h4>
+                <div className="boat-specs">13&apos;6&quot; &nbsp;|&nbsp; 400 lbs &nbsp;|&nbsp; 50 HP Yamaha</div>
+                <div className="boat-price">$22,969</div>
                 <Link href="/inventory" className="btn-card-view">VIEW BOAT &rarr;</Link>
               </div>
             </div>
@@ -161,12 +165,12 @@ export default function HomePage() {
             <div className="boat-card">
               <div className="card-img-wrap">
                 <span className="card-badge">NEW</span>
-                <img src="/assets/boat-480-brumby.png" alt="2026 Polycraft 480 Brumby" />
+                <img src="/assets/real-boat-480-brumby.jpg" alt="2025 Polycraft 480 Brumby" />
               </div>
               <div className="card-body">
-                <h4 className="boat-name">2026 Polycraft 480 Brumby</h4>
-                <div className="boat-specs">15&apos;9&quot; &nbsp;|&nbsp; 683 lbs &nbsp;|&nbsp; 40&ndash;70 HP</div>
-                <div className="boat-price">$18,419</div>
+                <h4 className="boat-name">2025 Polycraft 480 Brumby CC</h4>
+                <div className="boat-specs">15&apos;8&quot; &nbsp;|&nbsp; 683 lbs &nbsp;|&nbsp; 90 HP Yamaha</div>
+                <div className="boat-price">$35,069</div>
                 <Link href="/inventory" className="btn-card-view">VIEW BOAT &rarr;</Link>
               </div>
             </div>
@@ -174,12 +178,12 @@ export default function HomePage() {
             <div className="boat-card">
               <div className="card-img-wrap">
                 <span className="card-badge">NEW</span>
-                <img src="/assets/boat-steady-320.png" alt="Steady 320" />
+                <img src="/assets/real-boat-steady-320.jpg" alt="2026 Steady 320" />
               </div>
               <div className="card-body">
-                <h4 className="boat-name">Steady 320</h4>
-                <div className="boat-specs">10&apos;6&quot; &nbsp;|&nbsp; 198 lbs &nbsp;|&nbsp; Up to 15 HP</div>
-                <div className="boat-price">$3,730</div>
+                <h4 className="boat-name">2026 Steady 320 Dinghy</h4>
+                <div className="boat-specs">10&apos;5&quot; &nbsp;|&nbsp; 253 lbs &nbsp;|&nbsp; Up to 15 HP</div>
+                <div className="boat-price">$4,773</div>
                 <Link href="/inventory" className="btn-card-view">VIEW BOAT &rarr;</Link>
               </div>
             </div>
@@ -193,22 +197,22 @@ export default function HomePage() {
         <div className="dealership-content">
           <div className="dealership-eyebrow">WELCOME TO POLYBOATS</div>
           <h2 className="dealership-title">THE SOURCE FOR<br />POLYETHYLENE BOATS</h2>
-          <p className="dealership-desc">We&apos;re a specialty boat dealer located at Alpine Marina in Alpine, New Jersey, proudly representing Polycraft and Steady. We also offer pre-owned boats, outboards, parts, and expert service &mdash; with shipping coordination throughout the USA, Canada, Mexico, and the Caribbean.</p>
+          <p className="dealership-desc">We&apos;re a specialty boat dealer located inside Alpine Marina on the Hudson River in Alpine, New Jersey, proudly representing Polycraft and Steady. We also offer pre-owned boats, outboards, parts, and expert service &mdash; with shipping coordination throughout the USA, Canada, Mexico, and the Caribbean.</p>
           <div className="dealership-buttons">
             <Link href="/service" className="btn-primary-blue">ABOUT OUR DEALERSHIP &rarr;</Link>
-            <a href="https://maps.google.com/?q=Alpine+Marina+Alpine+NJ" target="_blank" rel="noopener noreferrer" className="btn-outline-white">VISIT ALPINE MARINA &rarr;</a>
+            <a href="https://maps.google.com/?q=Alpine+Marina+1+Alpine+Approach+Rd+Alpine+NJ" target="_blank" rel="noopener noreferrer" className="btn-outline-white">VISIT ALPINE MARINA &rarr;</a>
           </div>
         </div>
       </section>
 
-      {/* Bottom CTA Banner */}
+      {/* Bottom CTA Banner - Clean Background with zero text ghosting */}
       <section className="bottom-cta-banner">
         <div className="container">
           <h3 className="cta-title">READY TO GET ON THE WATER?</h3>
           <p className="cta-sub">Shop new boats, browse inventory, or contact our team &mdash; we&apos;re here to help.</p>
           <div className="cta-buttons">
             <Link href="/inventory" className="btn-pill-white">VIEW INVENTORY &rarr;</Link>
-            <a href="tel:+12015550199" className="btn-pill-warm">&#128222; CALL POLYBOATS &rarr;</a>
+            <a href="tel:2018004770" className="btn-pill-warm">&#128222; CALL OR TEXT (201) 800-4770</a>
             <Link href="/service#contact" className="btn-pill-white">CONTACT US &rarr;</Link>
           </div>
         </div>

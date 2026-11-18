@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'POLYBOATS | The Source for Polyethylene Boats - Official Dealer',
-  description: 'Official dealer of Polycraft and Steady polyethylene boats. Exceptionally durable, impact resistant, low maintenance boats located at Alpine Marina, NJ.',
+  description: 'Official dealer of Polycraft and Steady polyethylene boats. Located inside Alpine Marina, 1 Alpine Approach Rd, Alpine, NJ 07620. Call or Text: (201) 800-4770.',
 };
 
 export default function RootLayout({ children }) {
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet" />
       </head>
       <body>
-        {/* Main Header */}
+        {/* Top Header */}
         <header className="site-header">
           <div className="container header-inner">
             <Link href="/" className="brand-logo">
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         {/* Page Content */}
         <main>{children}</main>
 
-        {/* Footer */}
+        {/* Site Footer with Real Old Site Data */}
         <footer className="site-footer">
           <div className="container">
             <div className="footer-grid">
@@ -54,15 +54,20 @@ export default function RootLayout({ children }) {
                   <div className="logo-sub" style={{ color: 'rgba(255,255,255,0.7)' }}>THE SOURCE FOR POLYETHYLENE BOATS</div>
                 </div>
                 <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.7)', lineHeight: 1.6, maxWidth: '320px' }}>
-                  Premier North American importer and dealer for Polycraft and Steady boats. Located at Alpine Marina on the Hudson River, Alpine, New Jersey.
+                  PolyBoats is the #1 source for polyethylene boats in the country. Official authorized dealer for Polycraft and Steady boats, plus ePropulsion and Yamaha outboards.
                 </p>
+                <div style={{ marginTop: '14px', fontSize: '12px', color: 'var(--sky-blue)', fontWeight: 700 }}>
+                  <a href="https://www.instagram.com/polyboats" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>
+                    Follow on Instagram @polyboats &rarr;
+                  </a>
+                </div>
               </div>
 
               <div className="footer-col">
                 <h4>EXPLORE</h4>
                 <ul>
-                  <li><Link href="/new-boats">New Boats</Link></li>
-                  <li><Link href="/inventory">All Inventory</Link></li>
+                  <li><Link href="/new-boats">New Boats Lineup</Link></li>
+                  <li><Link href="/inventory">Current Inventory</Link></li>
                   <li><Link href="/pre-owned">Pre-Owned Boats</Link></li>
                   <li><Link href="/outboards">Outboard Motors</Link></li>
                   <li><Link href="/service">Service &amp; Rigging</Link></li>
@@ -73,31 +78,36 @@ export default function RootLayout({ children }) {
               <div className="footer-col">
                 <h4>BRANDS</h4>
                 <ul>
-                  <li><Link href="/new-boats?brand=polycraft">Polycraft Boats</Link></li>
-                  <li><Link href="/new-boats?brand=steady">Steady Boats</Link></li>
-                  <li><Link href="/outboards?brand=honda">Honda Marine</Link></li>
-                  <li><Link href="/outboards?brand=suzuki">Suzuki Outboards</Link></li>
+                  <li><Link href="/new-boats?brand=polycraft">Polycraft Boats (Australia)</Link></li>
+                  <li><Link href="/new-boats?brand=steady">Steady Boats (Norway)</Link></li>
+                  <li><Link href="/outboards?brand=epropulsion">ePropulsion Electric</Link></li>
                   <li><Link href="/outboards?brand=yamaha">Yamaha Marine</Link></li>
+                  <li><Link href="/outboards?brand=suzuki">Suzuki Outboards</Link></li>
                 </ul>
               </div>
 
               <div className="footer-col">
                 <h4>DEALERSHIP LOCATION</h4>
-                <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.6, marginBottom: '12px' }}>
-                  <strong>Alpine Marina</strong><br />
-                  Alpine, New Jersey 07620<br />
-                  Phone: (201) 768-4500<br />
-                  Email: sales@polyboats.com
+                <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.85)', lineHeight: 1.6, marginBottom: '10px' }}>
+                  <strong>Located Inside Alpine Marina</strong><br />
+                  1 Alpine Approach Rd<br />
+                  Alpine, NJ 07620<br />
+                  <strong>Call or Text:</strong> (201) 800-4770 <span style={{ fontSize: '11px', color: 'var(--sky-blue)' }}>(TEXT ONLY)</span>
                 </p>
-                <p style={{ fontSize: '12px', color: 'var(--sky-blue)' }}>
-                  Shipping across USA, Canada, Mexico &amp; Caribbean.
+                <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.65)', lineHeight: 1.5, marginBottom: '10px' }}>
+                  <strong>Showroom Hours:</strong><br />
+                  Monday &ndash; Sunday: 9:00 AM &ndash; 5:00 PM<br />
+                  <em>(By Appointment Only)</em>
+                </p>
+                <p style={{ fontSize: '12px', color: 'var(--sky-blue)', fontWeight: 600 }}>
+                  Shipping coordinated throughout USA, Canada, Mexico &amp; Caribbean Islands.
                 </p>
               </div>
             </div>
 
             <div className="footer-bottom">
-              <div>&copy; 2026 Polyboats. All rights reserved. Powered by Next.js &amp; Wix Studio CMS Architecture.</div>
-              <div>Official Importer &bull; Polycraft &bull; Steady</div>
+              <div>&copy; 2026 Poly Boats LLC. All rights reserved. Powered by Next.js &amp; Wix Studio CMS Architecture.</div>
+              <div>Official Importer &bull; Polycraft &bull; Steady &bull; ePropulsion</div>
             </div>
           </div>
         </footer>
